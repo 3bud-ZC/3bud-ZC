@@ -1,0 +1,99 @@
+<svg width="1280" height="420" viewBox="0 0 1280 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050014" />
+      <stop offset="50%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#14002E" />
+    </linearGradient>
+    <radialGradient id="glowPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0" />
+    </radialGradient>
+    
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.05" />
+    </pattern>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;display=swap');
+      .title { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 64px; fill: #FFFFFF; }
+      .tagline { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 28px; fill: #A855F7; }
+      .subline { font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px; fill: #CBD5E1; }
+      
+      .float1 { animation: float 6s ease-in-out infinite; }
+      .float2 { animation: float 8s ease-in-out infinite alternate; }
+      .float3 { animation: float 7s ease-in-out infinite alternate-reverse; }
+      
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+        100% { transform: translateY(0px); }
+      }
+      
+      .pulse { animation: pulse 4s ease-in-out infinite; }
+      
+      @keyframes pulse {
+        0% { opacity: 0.6; transform: scale(0.95); }
+        50% { opacity: 1; transform: scale(1.05); }
+        100% { opacity: 0.6; transform: scale(0.95); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="420" fill="url(#bgGradient)" />
+  <rect width="1280" height="420" fill="url(#grid)" />
+
+  <!-- Glowing Orbs -->
+  <circle cx="200" cy="100" r="300" fill="url(#glowPurple)" class="pulse" />
+  <circle cx="1080" cy="300" r="250" fill="url(#glowCyan)" class="pulse" style="animation-delay: 2s;" />
+
+  <!-- Abstract Tech Shapes -->
+  <g class="float1" opacity="0.4">
+    <rect x="100" y="250" width="120" height="80" rx="10" fill="none" stroke="#A855F7" stroke-width="2" />
+    <circle cx="120" cy="270" r="4" fill="#22D3EE" />
+    <line x1="140" y1="270" x2="200" y2="270" stroke="#A855F7" stroke-width="2" stroke-dasharray="4 4" />
+  </g>
+  
+  <g class="float2" opacity="0.3">
+    <polygon points="1100,80 1150,160 1050,160" fill="none" stroke="#22D3EE" stroke-width="2" />
+    <rect x="1080" y="110" width="40" height="4" fill="#7C3AED" />
+  </g>
+
+  <g class="float3" opacity="0.5">
+    <rect x="80" y="60" width="60" height="60" rx="8" fill="none" stroke="#C084FC" stroke-width="1.5" />
+    <circle cx="110" cy="90" r="15" fill="none" stroke="#22D3EE" stroke-width="1.5" />
+  </g>
+  
+  <g class="float1" opacity="0.4" style="animation-delay: 1s;">
+    <rect x="1150" y="280" width="80" height="100" rx="8" fill="none" stroke="#A855F7" stroke-width="2" />
+    <line x1="1170" y1="300" x2="1210" y2="300" stroke="#22D3EE" stroke-width="2" />
+    <line x1="1170" y1="320" x2="1190" y2="320" stroke="#A855F7" stroke-width="2" />
+  </g>
+
+  <!-- Content -->
+  <g text-anchor="middle">
+    <!-- Title -->
+    <text x="640" y="180" class="title">Abdullah Ragab</text>
+    
+    <!-- Tagline -->
+    <text x="640" y="240" class="tagline">Full-Stack Developer <tspan fill="#22D3EE">×</tspan> AI Automation Builder</text>
+    
+    <!-- Subline -->
+    <text x="640" y="290" class="subline">
+      Arabic-first platforms <tspan fill="#7C3AED">•</tspan> Business systems <tspan fill="#7C3AED">•</tspan> Telegram bots <tspan fill="#7C3AED">•</tspan> Local-first tools
+    </text>
+  </g>
+  
+  <!-- UI Window Decor (Top Left) -->
+  <g opacity="0.8">
+    <circle cx="30" cy="30" r="6" fill="#EF4444" />
+    <circle cx="50" cy="30" r="6" fill="#F59E0B" />
+    <circle cx="70" cy="30" r="6" fill="#10B981" />
+  </g>
+
+</svg>
