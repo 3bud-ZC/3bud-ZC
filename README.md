@@ -4,29 +4,33 @@
 
 <p align="center">
   <a href="https://abud.fun">
-    <img src="https://img.shields.io/badge/Portfolio-abud.fun-7C3AED?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+    <img src="https://img.shields.io/badge/Portfolio-abud.fun-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
   </a>
   <a href="https://www.linkedin.com/in/abudxali">
     <img src="https://img.shields.io/badge/LinkedIn-abudxali-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="mailto:abud@abud.fun">
-    <img src="https://img.shields.io/badge/Email-abud@abud.fun-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-abud@abud.fun-A855F7?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=24&duration=2600&pause=700&color=A855F7&center=true&vCenter=true&width=900&lines=Full-Stack+Developer;AI+Automation+Builder;Arabic-first+Software+Builder;Telegram+Bots+%26+Business+Systems;From+Idea+to+Deployment" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=24&duration=2400&pause=800&color=A855F7&center=true&vCenter=true&width=950&lines=Full-Stack+Developer;AI+Automation+Builder;Arabic-first+Software+Builder;Telegram+Bots+%26+Business+Systems;From+Idea+to+Deployment" alt="Typing SVG" />
 </p>
 
-## 👋 About Me
+<p align="center">
+  <img src="./assets/divider.svg" alt="Divider" width="100%" />
+</p>
 
-I am **Abdullah Ragab**, a Software Engineering student and full-stack developer focused on building practical, production-ready digital products. 
+## 🧑‍💻 About Me
 
-I work across web platforms, Arabic RTL dashboards, automation tools, Telegram bots, AI-assisted workflows, and VPS-deployed systems. My focus is not just writing code, but shipping usable software: clear interfaces, structured backends, reliable deployment, and real business value.
+I am **Abdullah Ragab**, a Software Engineering student and full-stack developer focused on building practical digital products. 
 
-## 🚀 Main Focus
+I work across web platforms, Arabic RTL dashboards, automation tools, Telegram bots, AI-assisted workflows, and VPS-deployed systems. My focus is shipping usable software: clear interfaces, structured backends, reliable deployment, and real business value.
 
-<table align="center">
+## 🚀 What I Build
+
+<table align="center" width="100%">
   <tr>
     <td width="50%" valign="top">
       <h3>💻 Full-Stack Systems</h3>
@@ -57,7 +61,7 @@ I work across web platforms, Arabic RTL dashboards, automation tools, Telegram b
 
 ## 📂 Selected Projects
 
-<table align="center">
+<table align="center" width="100%">
   <tr>
     <td width="50%" valign="top">
       <h3>RepoRadar AI</h3>
@@ -101,7 +105,7 @@ I work across web platforms, Arabic RTL dashboards, automation tools, Telegram b
       <p><i>AI Productivity • Prompt Systems • Reusable Workflows</i></p>
     </td>
     <td width="50%" valign="top">
-      <!-- Empty cell for grid balance -->
+      <!-- Empty cell for visual balance -->
     </td>
   </tr>
 </table>
@@ -117,12 +121,19 @@ I work across web platforms, Arabic RTL dashboards, automation tools, Telegram b
   <img src="https://github-readme-streak-stats.herokuapp.com?user=3bud-ZC&theme=midnight-purple&hide_border=true&background=0D1117&ring=A855F7&fire=C084FC&currStreakLabel=C084FC" alt="GitHub Streak" />
 </p>
 
-## 💼 Practical Background
+## 📬 Contact
 
-* Built and worked on real-world websites, systems, bots, and automation tools
-* Experience with full-stack development, dashboards, databases, and deployment
-* Background in freelancing, e-commerce, content, marketing, and digital operations
-* Focused on portfolio-ready products with practical business value
+<p align="center">
+  <a href="https://abud.fun">
+    <img src="https://img.shields.io/badge/Portfolio-abud.fun-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white" />
+  </a>
+  <a href="https://www.linkedin.com/in/abudxali">
+    <img src="https://img.shields.io/badge/LinkedIn-abudxali-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="mailto:abud@abud.fun">
+    <img src="https://img.shields.io/badge/Email-abud@abud.fun-A855F7?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+</p>
 
 ---
 
