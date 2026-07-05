@@ -109,8 +109,8 @@ I work across web platforms, Arabic RTL dashboards, automation tools, Telegram b
 ## 📊 GitHub Analytics
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=3bud-ZC&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0D1117&title_color=A855F7&icon_color=C084FC&text_color=E5E7EB" alt="GitHub Stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=3bud-ZC&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0D1117&title_color=A855F7&text_color=E5E7EB" alt="Top Languages" />
+  <img height="170" src="https://readme-stats-sigma-five.vercel.app/api?username=3bud-ZC&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0D1117&title_color=A855F7&icon_color=C084FC&text_color=E5E7EB" alt="GitHub Stats" />
+  <img height="170" src="https://readme-stats-sigma-five.vercel.app/api/top-langs/?username=3bud-ZC&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0D1117&title_color=A855F7&text_color=E5E7EB" alt="Top Languages" />
 </p>
 
 <p align="center">
