@@ -5,20 +5,20 @@
       <stop offset="40%" stop-color="#0D1117"/>
       <stop offset="100%" stop-color="#14002E"/>
     </linearGradient>
-    <radialGradient id="g1" cx="25%" cy="30%" r="45%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity=".25"/>
+    <radialGradient id="g1" cx="30%" cy="35%" r="45%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity=".2"/>
       <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="g2" cx="80%" cy="75%" r="40%">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity=".18"/>
+    <radialGradient id="g2" cx="75%" cy="70%" r="40%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity=".12"/>
       <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="g3" cx="55%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity=".12"/>
+    <radialGradient id="g3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity=".08"/>
       <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
     </radialGradient>
     <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M36 0L0 0 0 36" fill="none" stroke="#fff" stroke-opacity=".035" stroke-width=".8"/>
+      <path d="M36 0L0 0 0 36" fill="none" stroke="#fff" stroke-opacity=".03" stroke-width=".7"/>
     </pattern>
     <style>
       text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
@@ -28,117 +28,126 @@
       .ch{font-size:12px;font-weight:500;fill:#E5E7EB}
       .ct{font-size:13px;font-weight:600;fill:#fff}
       .cs{font-size:10px;font-weight:400;fill:#94A3B8}
-      @keyframes f1{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
-      @keyframes f2{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-      @keyframes gp{0%,100%{opacity:.5;transform:scale(.96)}50%{opacity:1;transform:scale(1.04)}}
-      @keyframes bp{0%,100%{opacity:.5}50%{opacity:1}}
+
+      @keyframes f1{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+      @keyframes f2{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+      @keyframes gp{0%,100%{opacity:.5;transform:scale(.97)}50%{opacity:1;transform:scale(1.03)}}
+      @keyframes bp{0%,100%{opacity:.45}50%{opacity:1}}
       @keyframes orb{to{transform:rotate(360deg)}}
-      @keyframes sc{0%{transform:translateX(-200px);opacity:0}20%{opacity:.3}80%{opacity:.3}100%{transform:translateX(1600px);opacity:0}}
-      @keyframes pp{0%,100%{opacity:.3;transform:scale(.8)}50%{opacity:.8;transform:scale(1.2)}}
+      @keyframes pp{0%,100%{opacity:.25;r:1.5}50%{opacity:.7;r:2.5}}
+
       .fl1{animation:f1 7s ease-in-out infinite}
       .fl2{animation:f2 6s ease-in-out infinite 2s}
-      .glow{animation:gp 5s ease-in-out infinite}
-      .glow2{animation:gp 5s ease-in-out infinite 2.5s}
-      .bar1{animation:bp 2.2s ease-in-out infinite}
-      .bar2{animation:bp 2.8s ease-in-out infinite .6s}
-      .bar3{animation:bp 2s ease-in-out infinite 1.2s}
-      .o1{animation:orb 35s linear infinite;transform-origin:700px 230px}
-      .o2{animation:orb 50s linear infinite reverse;transform-origin:700px 230px}
-      .scan{animation:sc 8s linear infinite}
-      .pp{animation:pp 3s ease-in-out infinite}
+      .fl3{animation:f2 8s ease-in-out infinite 1s}
+      .glow{animation:gp 6s ease-in-out infinite}
+      .glow2{animation:gp 6s ease-in-out infinite 3s}
+      .b1{animation:bp 2.2s ease-in-out infinite}
+      .b2{animation:bp 2.8s ease-in-out infinite .6s}
+      .b3{animation:bp 2s ease-in-out infinite 1.2s}
+      .o1{animation:orb 40s linear infinite;transform-origin:700px 230px}
+      .o2{animation:orb 55s linear infinite reverse;transform-origin:700px 230px}
+      .dot{animation:pp 3s ease-in-out infinite}
     </style>
   </defs>
 
-  <!-- Background -->
+  <!-- BG -->
   <rect width="1400" height="460" rx="16" fill="url(#bg)"/>
   <rect width="1400" height="460" rx="16" fill="url(#grid)"/>
 
-  <!-- Ambient Glows -->
-  <ellipse cx="350" cy="140" rx="500" ry="300" fill="url(#g1)" class="glow"/>
-  <ellipse cx="1100" cy="340" rx="450" ry="280" fill="url(#g2)" class="glow2"/>
-  <ellipse cx="700" cy="230" rx="600" ry="350" fill="url(#g3)"/>
+  <!-- Glows -->
+  <ellipse cx="350" cy="150" rx="480" ry="280" fill="url(#g1)" class="glow"/>
+  <ellipse cx="1050" cy="320" rx="420" ry="260" fill="url(#g2)" class="glow2"/>
+  <ellipse cx="700" cy="230" rx="550" ry="320" fill="url(#g3)"/>
 
-  <!-- Orbit Rings -->
-  <circle cx="700" cy="230" r="380" fill="none" stroke="#7C3AED" stroke-width=".8" stroke-opacity=".15" stroke-dasharray="12 20" class="o1"/>
-  <circle cx="700" cy="230" r="280" fill="none" stroke="#22D3EE" stroke-width=".6" stroke-opacity=".12" stroke-dasharray="8 16" class="o2"/>
-
-  <!-- Scanning Light -->
-  <rect x="-200" y="0" width="120" height="460" rx="60" fill="url(#g3)" opacity=".15" class="scan"/>
+  <!-- Orbits -->
+  <circle cx="700" cy="230" r="360" fill="none" stroke="#7C3AED" stroke-width=".7" stroke-opacity=".12" stroke-dasharray="10 18" class="o1"/>
+  <circle cx="700" cy="230" r="260" fill="none" stroke="#22D3EE" stroke-width=".5" stroke-opacity=".1" stroke-dasharray="6 14" class="o2"/>
 
   <!-- Particles -->
-  <circle cx="120" cy="80" r="2.5" fill="#22D3EE" class="pp"/>
-  <circle cx="320" cy="400" r="2" fill="#A855F7" class="pp" style="animation-delay:1s"/>
-  <circle cx="580" cy="60" r="1.8" fill="#fff" class="pp" style="animation-delay:.5s"/>
-  <circle cx="900" cy="50" r="2.2" fill="#C084FC" class="pp" style="animation-delay:2s"/>
-  <circle cx="1100" cy="100" r="1.5" fill="#22D3EE" class="pp" style="animation-delay:1.5s"/>
-  <circle cx="1300" cy="380" r="2" fill="#8B5CF6" class="pp" style="animation-delay:.8s"/>
-  <circle cx="200" cy="250" r="1.5" fill="#fff" class="pp" style="animation-delay:2.2s"/>
-  <circle cx="1250" cy="200" r="2" fill="#22D3EE" class="pp" style="animation-delay:1.8s"/>
+  <circle cx="140" cy="90" r="2" fill="#22D3EE" class="dot"/>
+  <circle cx="350" cy="400" r="2" fill="#A855F7" class="dot" style="animation-delay:1s"/>
+  <circle cx="620" cy="55" r="1.5" fill="#fff" class="dot" style="animation-delay:.5s"/>
+  <circle cx="880" cy="45" r="2" fill="#C084FC" class="dot" style="animation-delay:2s"/>
+  <circle cx="1120" cy="110" r="1.5" fill="#22D3EE" class="dot" style="animation-delay:1.5s"/>
+  <circle cx="1280" cy="370" r="2" fill="#8B5CF6" class="dot" style="animation-delay:.8s"/>
+  <circle cx="220" cy="260" r="1.5" fill="#fff" class="dot" style="animation-delay:2.2s"/>
+  <circle cx="1200" cy="180" r="1.8" fill="#22D3EE" class="dot" style="animation-delay:1.8s"/>
+  <circle cx="700" cy="420" r="1.5" fill="#A855F7" class="dot" style="animation-delay:2.5s"/>
+  <circle cx="480" cy="380" r="1.8" fill="#C084FC" class="dot" style="animation-delay:0.3s"/>
 
-  <!-- ======= CENTER TEXT ======= -->
+  <!-- ========= CENTER TEXT ========= -->
   <text x="700" y="175" text-anchor="middle" class="t1">Abdullah Ragab</text>
   <text x="700" y="220" text-anchor="middle" class="t2">Full-Stack Developer <tspan fill="#22D3EE">×</tspan> AI Automation Builder</text>
   <text x="700" y="258" text-anchor="middle" class="t3">Arabic-first platforms <tspan fill="#7C3AED">•</tspan> Business systems <tspan fill="#7C3AED">•</tspan> Telegram bots <tspan fill="#7C3AED">•</tspan> Local-first tools</text>
 
   <!-- Tech Chips -->
   <g text-anchor="middle" transform="translate(700,310)">
-    <g transform="translate(-275,0)"><rect x="-38" y="-13" width="76" height="26" rx="13" fill="#1a1a2e" stroke="#7C3AED" stroke-width=".7"/><text y="4" class="ch">Next.js</text></g>
-    <g transform="translate(-170,0)"><rect x="-48" y="-13" width="96" height="26" rx="13" fill="#1a1a2e" stroke="#7C3AED" stroke-width=".7"/><text y="4" class="ch">TypeScript</text></g>
-    <g transform="translate(-60,0)"><rect x="-35" y="-13" width="70" height="26" rx="13" fill="#1a1a2e" stroke="#7C3AED" stroke-width=".7"/><text y="4" class="ch">Python</text></g>
-    <g transform="translate(50,0)"><rect x="-48" y="-13" width="96" height="26" rx="13" fill="#1a1a2e" stroke="#7C3AED" stroke-width=".7"/><text y="4" class="ch">PostgreSQL</text></g>
-    <g transform="translate(155,0)"><rect x="-27" y="-13" width="54" height="26" rx="13" fill="#1a1a2e" stroke="#7C3AED" stroke-width=".7"/><text y="4" class="ch">VPS</text></g>
-    <g transform="translate(260,0)"><rect x="-52" y="-13" width="104" height="26" rx="13" fill="#1a1a2e" stroke="#22D3EE" stroke-width=".8"/><text y="4" class="ch">AI Workflows</text></g>
+    <g transform="translate(-275,0)"><rect x="-38" y="-13" width="76" height="26" rx="13" fill="#1a1a2e" stroke="#7C3AED" stroke-width=".6"/><text y="4" class="ch">Next.js</text></g>
+    <g transform="translate(-170,0)"><rect x="-48" y="-13" width="96" height="26" rx="13" fill="#1a1a2e" stroke="#7C3AED" stroke-width=".6"/><text y="4" class="ch">TypeScript</text></g>
+    <g transform="translate(-60,0)"><rect x="-35" y="-13" width="70" height="26" rx="13" fill="#1a1a2e" stroke="#7C3AED" stroke-width=".6"/><text y="4" class="ch">Python</text></g>
+    <g transform="translate(50,0)"><rect x="-48" y="-13" width="96" height="26" rx="13" fill="#1a1a2e" stroke="#7C3AED" stroke-width=".6"/><text y="4" class="ch">PostgreSQL</text></g>
+    <g transform="translate(155,0)"><rect x="-27" y="-13" width="54" height="26" rx="13" fill="#1a1a2e" stroke="#7C3AED" stroke-width=".6"/><text y="4" class="ch">VPS</text></g>
+    <g transform="translate(260,0)"><rect x="-52" y="-13" width="104" height="26" rx="13" fill="#1a1a2e" stroke="#22D3EE" stroke-width=".7"/><text y="4" class="ch">AI Workflows</text></g>
   </g>
 
-  <!-- ======= RIGHT: Dashboard Card ======= -->
-  <g class="fl1" transform="translate(1050,55)">
-    <rect width="260" height="185" rx="12" fill="#0D1117" stroke="#A855F7" stroke-width="1.2" stroke-opacity=".7"/>
+  <!-- ========= RIGHT: Dashboard Card ========= -->
+  <g class="fl1" transform="translate(1080,80)">
+    <rect width="240" height="170" rx="12" fill="#0D1117" stroke="#7C3AED" stroke-width="1" stroke-opacity=".5"/>
     <!-- Title bar -->
-    <rect width="260" height="34" rx="12" fill="#161b22"/>
-    <rect y="22" width="260" height="12" fill="#161b22"/>
-    <circle cx="18" cy="17" r="5" fill="#ef4444"/>
-    <circle cx="34" cy="17" r="5" fill="#eab308"/>
-    <circle cx="50" cy="17" r="5" fill="#22c55e"/>
-    <text x="130" y="22" text-anchor="middle" class="cs">dashboard_api.ts</text>
+    <rect width="240" height="32" rx="12" fill="#161b22"/>
+    <rect y="20" width="240" height="12" fill="#161b22"/>
+    <circle cx="16" cy="16" r="4.5" fill="#ef4444" opacity=".8"/>
+    <circle cx="30" cy="16" r="4.5" fill="#eab308" opacity=".8"/>
+    <circle cx="44" cy="16" r="4.5" fill="#22c55e" opacity=".8"/>
+    <text x="130" y="20" text-anchor="middle" class="cs">dashboard_api.ts</text>
     <!-- Code bars -->
-    <rect x="18" y="52" width="90"  height="7" rx="3.5" fill="#7C3AED" class="bar1"/>
-    <rect x="18" y="70" width="160" height="7" rx="3.5" fill="#22D3EE" opacity=".55"/>
-    <rect x="18" y="88" width="55"  height="7" rx="3.5" fill="#C084FC" class="bar2"/>
-    <rect x="18" y="106" width="130" height="7" rx="3.5" fill="#8B5CF6" opacity=".65"/>
-    <rect x="18" y="124" width="100" height="7" rx="3.5" fill="#22D3EE" class="bar3"/>
+    <rect x="16" y="48" width="85" height="7" rx="3.5" fill="#7C3AED" opacity=".7" class="b1"/>
+    <rect x="16" y="64" width="150" height="7" rx="3.5" fill="#22D3EE" opacity=".4"/>
+    <rect x="16" y="80" width="50" height="7" rx="3.5" fill="#C084FC" opacity=".6" class="b2"/>
+    <rect x="16" y="96" width="120" height="7" rx="3.5" fill="#8B5CF6" opacity=".5"/>
+    <rect x="16" y="112" width="95" height="7" rx="3.5" fill="#22D3EE" opacity=".5" class="b3"/>
     <!-- Mini chart -->
-    <rect x="160" y="85" width="80" height="80" rx="6" fill="#0D1117" stroke="#334155" stroke-width=".8"/>
-    <polyline points="170,145 185,130 195,138 210,115 225,125 230,108" fill="none" stroke="#A855F7" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
-    <circle cx="230" cy="108" r="3" fill="#A855F7" class="pp"/>
+    <rect x="150" y="75" width="72" height="72" rx="6" fill="#0D1117" stroke="#334155" stroke-width=".7"/>
+    <polyline points="160,130 172,118 180,124 194,105 208,112 214,100" fill="none" stroke="#A855F7" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="214" cy="100" r="2.5" fill="#A855F7" class="dot"/>
   </g>
 
-  <!-- ======= LEFT: Terminal Card ======= -->
-  <g class="fl2" transform="translate(80,60)">
-    <rect width="200" height="120" rx="10" fill="#0D1117" stroke="#334155" stroke-width="1"/>
-    <rect width="200" height="28" rx="10" fill="#161b22"/>
-    <rect y="18" width="200" height="10" fill="#161b22"/>
-    <circle cx="14" cy="14" r="4" fill="#ef4444"/>
-    <circle cx="27" cy="14" r="4" fill="#eab308"/>
-    <circle cx="40" cy="14" r="4" fill="#22c55e"/>
-    <text x="100" y="18" text-anchor="middle" class="cs">terminal</text>
-    <text x="14" y="52" class="cs" fill="#22D3EE">$</text>
-    <text x="26" y="52" class="cs" fill="#94A3B8"> npm run build</text>
-    <text x="14" y="68" class="cs" fill="#10B981">✓ compiled successfully</text>
-    <text x="14" y="84" class="cs" fill="#22D3EE">$</text>
-    <text x="26" y="84" class="cs" fill="#94A3B8"> pm2 start app</text>
-    <text x="14" y="100" class="cs" fill="#10B981">✓ process online</text>
+  <!-- ========= LEFT-TOP: Terminal Card ========= -->
+  <g class="fl2" transform="translate(60,65)">
+    <rect width="195" height="110" rx="10" fill="#0D1117" stroke="#334155" stroke-width=".8"/>
+    <rect width="195" height="26" rx="10" fill="#161b22"/>
+    <rect y="16" width="195" height="10" fill="#161b22"/>
+    <circle cx="14" cy="13" r="3.5" fill="#ef4444" opacity=".8"/>
+    <circle cx="25" cy="13" r="3.5" fill="#eab308" opacity=".8"/>
+    <circle cx="36" cy="13" r="3.5" fill="#22c55e" opacity=".8"/>
+    <text x="100" y="17" text-anchor="middle" class="cs">terminal</text>
+    <text x="12" y="46" class="cs"><tspan fill="#22D3EE">$</tspan><tspan fill="#94A3B8"> npm run build</tspan></text>
+    <text x="12" y="62" class="cs" fill="#10B981">✓ compiled successfully</text>
+    <text x="12" y="78" class="cs"><tspan fill="#22D3EE">$</tspan><tspan fill="#94A3B8"> pm2 start app</tspan></text>
+    <text x="12" y="94" class="cs" fill="#10B981">✓ process online</text>
   </g>
 
-  <!-- ======= LEFT-BOTTOM: AI Automation Card ======= -->
-  <g class="fl1" style="animation-delay:3.5s" transform="translate(70,230)">
-    <rect width="195" height="95" rx="10" fill="#100020" stroke="#22D3EE" stroke-width="1" stroke-opacity=".8"/>
-    <!-- Icon area -->
-    <rect x="14" y="14" width="26" height="26" rx="7" fill="#7C3AED" opacity=".2"/>
-    <path d="M21 21L27 27M27 21L21 27" stroke="#22D3EE" stroke-width="2.5" stroke-linecap="round"/>
-    <text x="52" y="32" class="ct">AI Automation</text>
-    <text x="14" y="58" class="cs">Workflows: <tspan fill="#10B981">Active</tspan></text>
-    <!-- Progress bar -->
-    <rect x="14" y="72" width="167" height="6" rx="3" fill="#1E293B"/>
-    <rect x="14" y="72" width="120" height="6" rx="3" fill="#A855F7" class="bar2"/>
+  <!-- ========= LEFT-BOTTOM: AI Automation Card ========= -->
+  <g class="fl3" transform="translate(50,260)">
+    <rect width="185" height="88" rx="10" fill="#100020" stroke="#22D3EE" stroke-width=".8" stroke-opacity=".6"/>
+    <!-- Icon -->
+    <rect x="14" y="14" width="24" height="24" rx="6" fill="#7C3AED" opacity=".15"/>
+    <path d="M20 20L26 26M26 20L20 26" stroke="#22D3EE" stroke-width="2" stroke-linecap="round"/>
+    <text x="48" y="31" class="ct">AI Automation</text>
+    <text x="14" y="56" class="cs">Workflows: <tspan fill="#10B981">Active</tspan></text>
+    <!-- Progress -->
+    <rect x="14" y="68" width="157" height="5" rx="2.5" fill="#1E293B"/>
+    <rect x="14" y="68" width="110" height="5" rx="2.5" fill="#A855F7" class="b2"/>
   </g>
+
+  <!-- ========= RIGHT-BOTTOM: Small Status Card ========= -->
+  <g class="fl2" style="animation-delay:1s" transform="translate(1140,290)">
+    <rect width="160" height="65" rx="8" fill="#0D1117" stroke="#8B5CF6" stroke-width=".7" stroke-opacity=".4"/>
+    <text x="14" y="24" class="ct" font-size="12">Deploy Status</text>
+    <text x="14" y="44" class="cs">Production: <tspan fill="#10B981">● Live</tspan></text>
+    <text x="14" y="56" class="cs">Uptime: <tspan fill="#E5E7EB">99.9%</tspan></text>
+  </g>
+
+  <!-- Bottom edge glow line -->
+  <rect x="200" y="445" width="1000" height="2" rx="1" fill="#7C3AED" opacity=".15"/>
 </svg>
