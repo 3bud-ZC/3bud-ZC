@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="8" viewBox="0 0 400 8">
+  <defs>
+    <linearGradient id="gl" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#A855F7" stop-opacity=".8"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .glw{animation:gla 2s ease-in-out infinite alternate}
+      @keyframes gla{0%{opacity:.4}100%{opacity:1}}
+    </style>
+  </defs>
+  <rect x="0" y="3" width="400" height="2" rx="1" fill="url(#gl)" class="glw"/>
+</svg>

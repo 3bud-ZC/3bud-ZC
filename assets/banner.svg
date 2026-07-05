@@ -1,118 +1,144 @@
-<svg width="1200" height="400" viewBox="0 0 1200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="460" viewBox="0 0 1400 460">
   <defs>
-    <!-- Seamless GitHub Dark Mode Background -->
-    <rect id="bg" width="1200" height="400" fill="#0d1117" rx="15" />
-    
-    <!-- Subtle Glows -->
-    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.15" />
-      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0" />
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="460" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#050014"/>
+      <stop offset="40%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#14002E"/>
+    </linearGradient>
+    <radialGradient id="g1" cx="25%" cy="30%" r="45%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity=".25"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.1" />
-      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0" />
+    <radialGradient id="g2" cx="80%" cy="75%" r="40%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
     </radialGradient>
-    
-    <!-- Grid -->
-    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.03" />
+    <radialGradient id="g3" cx="55%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity=".12"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0L0 0 0 36" fill="none" stroke="#fff" stroke-opacity=".035" stroke-width=".8"/>
     </pattern>
-
     <style>
-      text {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      }
-      .name { font-weight: 800; font-size: 52px; fill: #F8FAFC; letter-spacing: -1px; }
-      .role { font-weight: 600; font-size: 24px; fill: #A855F7; }
-      .desc { font-weight: 400; font-size: 16px; fill: #94A3B8; }
-      .chip-bg { fill: #1E293B; stroke: #334155; stroke-width: 1px; rx: 12px; }
-      .chip-text { font-weight: 500; font-size: 13px; fill: #E2E8F0; }
-      
-      .anim-float { animation: float 6s ease-in-out infinite; }
-      .anim-float-delayed { animation: float 6s ease-in-out infinite 3s; }
-      .anim-pulse { animation: pulse 4s ease-in-out infinite alternate; }
-      
-      @keyframes float {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-10px); }
-      }
-      @keyframes pulse {
-        0% { opacity: 0.6; transform: scale(0.98); }
-        100% { opacity: 1; transform: scale(1.02); }
-      }
+      text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+      .t1{font-size:58px;font-weight:800;fill:#fff}
+      .t2{font-size:25px;font-weight:600;fill:#A855F7}
+      .t3{font-size:17px;font-weight:400;fill:#CBD5E1}
+      .ch{font-size:12px;font-weight:500;fill:#E5E7EB}
+      .ct{font-size:13px;font-weight:600;fill:#fff}
+      .cs{font-size:10px;font-weight:400;fill:#94A3B8}
+      @keyframes f1{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+      @keyframes f2{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+      @keyframes gp{0%,100%{opacity:.5;transform:scale(.96)}50%{opacity:1;transform:scale(1.04)}}
+      @keyframes bp{0%,100%{opacity:.5}50%{opacity:1}}
+      @keyframes orb{to{transform:rotate(360deg)}}
+      @keyframes sc{0%{transform:translateX(-200px);opacity:0}20%{opacity:.3}80%{opacity:.3}100%{transform:translateX(1600px);opacity:0}}
+      @keyframes pp{0%,100%{opacity:.3;transform:scale(.8)}50%{opacity:.8;transform:scale(1.2)}}
+      .fl1{animation:f1 7s ease-in-out infinite}
+      .fl2{animation:f2 6s ease-in-out infinite 2s}
+      .glow{animation:gp 5s ease-in-out infinite}
+      .glow2{animation:gp 5s ease-in-out infinite 2.5s}
+      .bar1{animation:bp 2.2s ease-in-out infinite}
+      .bar2{animation:bp 2.8s ease-in-out infinite .6s}
+      .bar3{animation:bp 2s ease-in-out infinite 1.2s}
+      .o1{animation:orb 35s linear infinite;transform-origin:700px 230px}
+      .o2{animation:orb 50s linear infinite reverse;transform-origin:700px 230px}
+      .scan{animation:sc 8s linear infinite}
+      .pp{animation:pp 3s ease-in-out infinite}
     </style>
   </defs>
 
-  <use href="#bg" />
-  <rect width="1200" height="400" fill="url(#grid)" rx="15" />
-  
+  <!-- Background -->
+  <rect width="1400" height="460" rx="16" fill="url(#bg)"/>
+  <rect width="1400" height="460" rx="16" fill="url(#grid)"/>
+
   <!-- Ambient Glows -->
-  <circle cx="200" cy="100" r="400" fill="url(#glow1)" class="anim-pulse" />
-  <circle cx="1000" cy="300" r="350" fill="url(#glow2)" class="anim-pulse" style="animation-delay: -2s;" />
+  <ellipse cx="350" cy="140" rx="500" ry="300" fill="url(#g1)" class="glow"/>
+  <ellipse cx="1100" cy="340" rx="450" ry="280" fill="url(#g2)" class="glow2"/>
+  <ellipse cx="700" cy="230" rx="600" ry="350" fill="url(#g3)"/>
 
-  <!-- Center Content -->
-  <g text-anchor="middle">
-    <text x="600" y="160" class="name">Abdullah Ragab</text>
-    <text x="600" y="210" class="role">Software Engineer &amp; Full-Stack Builder</text>
-    <text x="600" y="250" class="desc">Arabic-first platforms • Business systems • Local-first tools</text>
+  <!-- Orbit Rings -->
+  <circle cx="700" cy="230" r="380" fill="none" stroke="#7C3AED" stroke-width=".8" stroke-opacity=".15" stroke-dasharray="12 20" class="o1"/>
+  <circle cx="700" cy="230" r="280" fill="none" stroke="#22D3EE" stroke-width=".6" stroke-opacity=".12" stroke-dasharray="8 16" class="o2"/>
+
+  <!-- Scanning Light -->
+  <rect x="-200" y="0" width="120" height="460" rx="60" fill="url(#g3)" opacity=".15" class="scan"/>
+
+  <!-- Particles -->
+  <circle cx="120" cy="80" r="2.5" fill="#22D3EE" class="pp"/>
+  <circle cx="320" cy="400" r="2" fill="#A855F7" class="pp" style="animation-delay:1s"/>
+  <circle cx="580" cy="60" r="1.8" fill="#fff" class="pp" style="animation-delay:.5s"/>
+  <circle cx="900" cy="50" r="2.2" fill="#C084FC" class="pp" style="animation-delay:2s"/>
+  <circle cx="1100" cy="100" r="1.5" fill="#22D3EE" class="pp" style="animation-delay:1.5s"/>
+  <circle cx="1300" cy="380" r="2" fill="#8B5CF6" class="pp" style="animation-delay:.8s"/>
+  <circle cx="200" cy="250" r="1.5" fill="#fff" class="pp" style="animation-delay:2.2s"/>
+  <circle cx="1250" cy="200" r="2" fill="#22D3EE" class="pp" style="animation-delay:1.8s"/>
+
+  <!-- ======= CENTER TEXT ======= -->
+  <text x="700" y="175" text-anchor="middle" class="t1">Abdullah Ragab</text>
+  <text x="700" y="220" text-anchor="middle" class="t2">Full-Stack Developer <tspan fill="#22D3EE">×</tspan> AI Automation Builder</text>
+  <text x="700" y="258" text-anchor="middle" class="t3">Arabic-first platforms <tspan fill="#7C3AED">•</tspan> Business systems <tspan fill="#7C3AED">•</tspan> Telegram bots <tspan fill="#7C3AED">•</tspan> Local-first tools</text>
+
+  <!-- Tech Chips -->
+  <g text-anchor="middle" transform="translate(700,310)">
+    <g transform="translate(-275,0)"><rect x="-38" y="-13" width="76" height="26" rx="13" fill="#1a1a2e" stroke="#7C3AED" stroke-width=".7"/><text y="4" class="ch">Next.js</text></g>
+    <g transform="translate(-170,0)"><rect x="-48" y="-13" width="96" height="26" rx="13" fill="#1a1a2e" stroke="#7C3AED" stroke-width=".7"/><text y="4" class="ch">TypeScript</text></g>
+    <g transform="translate(-60,0)"><rect x="-35" y="-13" width="70" height="26" rx="13" fill="#1a1a2e" stroke="#7C3AED" stroke-width=".7"/><text y="4" class="ch">Python</text></g>
+    <g transform="translate(50,0)"><rect x="-48" y="-13" width="96" height="26" rx="13" fill="#1a1a2e" stroke="#7C3AED" stroke-width=".7"/><text y="4" class="ch">PostgreSQL</text></g>
+    <g transform="translate(155,0)"><rect x="-27" y="-13" width="54" height="26" rx="13" fill="#1a1a2e" stroke="#7C3AED" stroke-width=".7"/><text y="4" class="ch">VPS</text></g>
+    <g transform="translate(260,0)"><rect x="-52" y="-13" width="104" height="26" rx="13" fill="#1a1a2e" stroke="#22D3EE" stroke-width=".8"/><text y="4" class="ch">AI Workflows</text></g>
   </g>
 
-  <!-- Abstract Graphic Right (Code/Terminal Window) -->
-  <g class="anim-float" transform="translate(900, 100)">
-    <rect width="200" height="130" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
-    <!-- Window buttons -->
-    <circle cx="15" cy="15" r="4" fill="#ef4444" />
-    <circle cx="27" cy="15" r="4" fill="#eab308" />
-    <circle cx="39" cy="15" r="4" fill="#22c55e" />
-    
-    <!-- Code lines -->
-    <rect x="15" y="40" width="80" height="6" rx="3" fill="#A855F7" opacity="0.8" />
-    <rect x="15" y="55" width="120" height="6" rx="3" fill="#38bdf8" opacity="0.6" />
-    <rect x="15" y="70" width="60" height="6" rx="3" fill="#c084fc" opacity="0.7" />
-    <rect x="15" y="85" width="140" height="6" rx="3" fill="#94a3b8" opacity="0.4" />
+  <!-- ======= RIGHT: Dashboard Card ======= -->
+  <g class="fl1" transform="translate(1050,55)">
+    <rect width="260" height="185" rx="12" fill="#0D1117" stroke="#A855F7" stroke-width="1.2" stroke-opacity=".7"/>
+    <!-- Title bar -->
+    <rect width="260" height="34" rx="12" fill="#161b22"/>
+    <rect y="22" width="260" height="12" fill="#161b22"/>
+    <circle cx="18" cy="17" r="5" fill="#ef4444"/>
+    <circle cx="34" cy="17" r="5" fill="#eab308"/>
+    <circle cx="50" cy="17" r="5" fill="#22c55e"/>
+    <text x="130" y="22" text-anchor="middle" class="cs">dashboard_api.ts</text>
+    <!-- Code bars -->
+    <rect x="18" y="52" width="90"  height="7" rx="3.5" fill="#7C3AED" class="bar1"/>
+    <rect x="18" y="70" width="160" height="7" rx="3.5" fill="#22D3EE" opacity=".55"/>
+    <rect x="18" y="88" width="55"  height="7" rx="3.5" fill="#C084FC" class="bar2"/>
+    <rect x="18" y="106" width="130" height="7" rx="3.5" fill="#8B5CF6" opacity=".65"/>
+    <rect x="18" y="124" width="100" height="7" rx="3.5" fill="#22D3EE" class="bar3"/>
+    <!-- Mini chart -->
+    <rect x="160" y="85" width="80" height="80" rx="6" fill="#0D1117" stroke="#334155" stroke-width=".8"/>
+    <polyline points="170,145 185,130 195,138 210,115 225,125 230,108" fill="none" stroke="#A855F7" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="230" cy="108" r="3" fill="#A855F7" class="pp"/>
   </g>
 
-  <!-- Abstract Graphic Left (AI/Network Node) -->
-  <g class="anim-float-delayed" transform="translate(100, 180)">
-    <rect width="160" height="80" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
-    <path d="M 20 40 L 40 40 L 50 25 L 65 55 L 75 40 L 140 40" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linejoin="round" />
-    <circle cx="40" cy="40" r="3" fill="#22D3EE" />
-    <circle cx="50" cy="25" r="3" fill="#22D3EE" />
-    <circle cx="65" cy="55" r="3" fill="#A855F7" />
-    <circle cx="75" cy="40" r="3" fill="#22D3EE" />
+  <!-- ======= LEFT: Terminal Card ======= -->
+  <g class="fl2" transform="translate(80,60)">
+    <rect width="200" height="120" rx="10" fill="#0D1117" stroke="#334155" stroke-width="1"/>
+    <rect width="200" height="28" rx="10" fill="#161b22"/>
+    <rect y="18" width="200" height="10" fill="#161b22"/>
+    <circle cx="14" cy="14" r="4" fill="#ef4444"/>
+    <circle cx="27" cy="14" r="4" fill="#eab308"/>
+    <circle cx="40" cy="14" r="4" fill="#22c55e"/>
+    <text x="100" y="18" text-anchor="middle" class="cs">terminal</text>
+    <text x="14" y="52" class="cs" fill="#22D3EE">$</text>
+    <text x="26" y="52" class="cs" fill="#94A3B8"> npm run build</text>
+    <text x="14" y="68" class="cs" fill="#10B981">✓ compiled successfully</text>
+    <text x="14" y="84" class="cs" fill="#22D3EE">$</text>
+    <text x="26" y="84" class="cs" fill="#94A3B8"> pm2 start app</text>
+    <text x="14" y="100" class="cs" fill="#10B981">✓ process online</text>
   </g>
 
-  <!-- Tech Chips Centered Bottom -->
-  <g transform="translate(600, 310)">
-    <!-- Next.js -->
-    <g transform="translate(-240, 0)">
-      <rect x="-35" y="-12" width="70" height="24" class="chip-bg" />
-      <text x="0" y="4" text-anchor="middle" class="chip-text">Next.js</text>
-    </g>
-    <!-- TypeScript -->
-    <g transform="translate(-140, 0)">
-      <rect x="-40" y="-12" width="80" height="24" class="chip-bg" />
-      <text x="0" y="4" text-anchor="middle" class="chip-text">TypeScript</text>
-    </g>
-    <!-- Python -->
-    <g transform="translate(-40, 0)">
-      <rect x="-30" y="-12" width="60" height="24" class="chip-bg" />
-      <text x="0" y="4" text-anchor="middle" class="chip-text">Python</text>
-    </g>
-    <!-- Postgres -->
-    <g transform="translate(50, 0)">
-      <rect x="-40" y="-12" width="80" height="24" class="chip-bg" />
-      <text x="0" y="4" text-anchor="middle" class="chip-text">Postgres</text>
-    </g>
-    <!-- VPS -->
-    <g transform="translate(140, 0)">
-      <rect x="-25" y="-12" width="50" height="24" class="chip-bg" />
-      <text x="0" y="4" text-anchor="middle" class="chip-text">VPS</text>
-    </g>
-    <!-- AI -->
-    <g transform="translate(210, 0)">
-      <rect x="-25" y="-12" width="50" height="24" class="chip-bg" />
-      <text x="0" y="4" text-anchor="middle" class="chip-text">AI</text>
-    </g>
+  <!-- ======= LEFT-BOTTOM: AI Automation Card ======= -->
+  <g class="fl1" style="animation-delay:3.5s" transform="translate(70,230)">
+    <rect width="195" height="95" rx="10" fill="#100020" stroke="#22D3EE" stroke-width="1" stroke-opacity=".8"/>
+    <!-- Icon area -->
+    <rect x="14" y="14" width="26" height="26" rx="7" fill="#7C3AED" opacity=".2"/>
+    <path d="M21 21L27 27M27 21L21 27" stroke="#22D3EE" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="52" y="32" class="ct">AI Automation</text>
+    <text x="14" y="58" class="cs">Workflows: <tspan fill="#10B981">Active</tspan></text>
+    <!-- Progress bar -->
+    <rect x="14" y="72" width="167" height="6" rx="3" fill="#1E293B"/>
+    <rect x="14" y="72" width="120" height="6" rx="3" fill="#A855F7" class="bar2"/>
   </g>
 </svg>
