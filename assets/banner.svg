@@ -1,220 +1,118 @@
-<svg width="1280" height="420" viewBox="0 0 1280 420" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1200" height="400" viewBox="0 0 1200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#050014" />
-      <stop offset="50%" stop-color="#0D1117" />
-      <stop offset="100%" stop-color="#100020" />
-    </linearGradient>
+    <!-- Seamless GitHub Dark Mode Background -->
+    <rect id="bg" width="1200" height="400" fill="#0d1117" rx="15" />
     
-    <!-- Glow Gradients -->
-    <radialGradient id="glowPurple" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.35" />
+    <!-- Subtle Glows -->
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.15" />
       <stop offset="100%" stop-color="#7C3AED" stop-opacity="0" />
     </radialGradient>
-    <radialGradient id="glowCyan" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.25" />
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.1" />
       <stop offset="100%" stop-color="#22D3EE" stop-opacity="0" />
     </radialGradient>
-    <radialGradient id="glowDeep" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#2B005F" stop-opacity="0.6" />
-      <stop offset="100%" stop-color="#2B005F" stop-opacity="0" />
-    </radialGradient>
-
-    <!-- Tech Chip Gradient -->
-    <linearGradient id="chipGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1E1E2E" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#2D2D44" stop-opacity="0.4" />
-    </linearGradient>
-
-    <!-- Grid Pattern -->
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.03" />
+    
+    <!-- Grid -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.03" />
     </pattern>
 
-    <!-- Styles and Animations -->
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap');
-      
       text {
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       }
+      .name { font-weight: 800; font-size: 52px; fill: #F8FAFC; letter-spacing: -1px; }
+      .role { font-weight: 600; font-size: 24px; fill: #A855F7; }
+      .desc { font-weight: 400; font-size: 16px; fill: #94A3B8; }
+      .chip-bg { fill: #1E293B; stroke: #334155; stroke-width: 1px; rx: 12px; }
+      .chip-text { font-weight: 500; font-size: 13px; fill: #E2E8F0; }
       
-      .title { font-weight: 800; font-size: 56px; fill: #FFFFFF; letter-spacing: -1px; }
-      .tagline { font-weight: 600; font-size: 24px; fill: #A855F7; letter-spacing: 0.5px; }
-      .subline { font-weight: 400; font-size: 16px; fill: #CBD5E1; }
-      .chip-text { font-weight: 500; font-size: 12px; fill: #E5E7EB; }
-      .card-title { font-weight: 600; font-size: 14px; fill: #FFFFFF; }
-      .card-sub { font-weight: 400; font-size: 10px; fill: #94A3B8; }
-      
-      /* Float Animations */
-      .float-slow { animation: float 8s ease-in-out infinite; }
-      .float-med { animation: float 6s ease-in-out infinite alternate; }
-      .float-fast { animation: float 4s ease-in-out infinite alternate-reverse; }
-      .float-delay-1 { animation: float 7s ease-in-out infinite 1s; }
-      .float-delay-2 { animation: float 6s ease-in-out infinite 2s; }
+      .anim-float { animation: float 6s ease-in-out infinite; }
+      .anim-float-delayed { animation: float 6s ease-in-out infinite 3s; }
+      .anim-pulse { animation: pulse 4s ease-in-out infinite alternate; }
       
       @keyframes float {
         0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-15px); }
+        50% { transform: translateY(-10px); }
       }
-      
-      /* Pulse Glows */
-      .pulse-slow { animation: pulse 6s ease-in-out infinite; }
-      .pulse-fast { animation: pulse 3s ease-in-out infinite alternate; }
-      
       @keyframes pulse {
-        0%, 100% { opacity: 0.5; transform: scale(0.95) translate(0, 0); }
-        50% { opacity: 1; transform: scale(1.05) translate(-10px, 10px); }
-      }
-      
-      /* Particles drift */
-      .drift-1 { animation: driftX 15s linear infinite; }
-      .drift-2 { animation: driftX 20s linear infinite reverse; }
-      
-      @keyframes driftX {
-        0% { transform: translateX(-50px) rotate(0deg); opacity: 0; }
-        10% { opacity: 0.5; }
-        90% { opacity: 0.5; }
-        100% { transform: translateX(200px) rotate(180deg); opacity: 0; }
-      }
-      
-      /* Orbit rotation */
-      .orbit-cw { animation: spin 40s linear infinite; transform-origin: center; }
-      .orbit-ccw { animation: spin 50s linear infinite reverse; transform-origin: center; }
-      
-      @keyframes spin {
-        100% { transform: rotate(360deg); }
-      }
-      
-      /* Card pulse bars */
-      .bar-pulse-1 { animation: barPulse 2s ease-in-out infinite; }
-      .bar-pulse-2 { animation: barPulse 2.5s ease-in-out infinite 0.5s; }
-      .bar-pulse-3 { animation: barPulse 1.8s ease-in-out infinite 1s; }
-      
-      @keyframes barPulse {
-        0%, 100% { width: 30%; opacity: 0.5; }
-        50% { width: 80%; opacity: 1; }
-      }
-      
-      /* Neon stroke dash */
-      .dash-draw { stroke-dasharray: 100 200; animation: dashAnim 8s linear infinite; }
-      
-      @keyframes dashAnim {
-        to { stroke-dashoffset: -300; }
+        0% { opacity: 0.6; transform: scale(0.98); }
+        100% { opacity: 1; transform: scale(1.02); }
       }
     </style>
   </defs>
 
-  <!-- Background -->
-  <rect width="100%" height="100%" fill="url(#bgGradient)" rx="16" />
-  <rect width="100%" height="100%" fill="url(#grid)" rx="16" />
-
-  <!-- Animated Glow Blobs -->
-  <circle cx="150" cy="100" r="350" fill="url(#glowDeep)" class="pulse-slow" />
-  <circle cx="1100" cy="300" r="400" fill="url(#glowPurple)" class="pulse-slow" style="animation-delay: -3s" />
-  <circle cx="640" cy="400" r="250" fill="url(#glowCyan)" class="pulse-fast" />
-
-  <!-- Animated Particles -->
-  <g opacity="0.6">
-    <circle cx="200" cy="80" r="2" fill="#22D3EE" class="drift-1" />
-    <circle cx="800" cy="350" r="3" fill="#A855F7" class="drift-2" />
-    <circle cx="1050" cy="150" r="1.5" fill="#FFFFFF" class="drift-1" style="animation-duration: 12s;" />
-    <circle cx="400" cy="280" r="2" fill="#7C3AED" class="drift-2" style="animation-duration: 18s;" />
-    <circle cx="120" cy="320" r="2.5" fill="#22D3EE" class="drift-1" style="animation-duration: 25s;" />
-  </g>
-
-  <!-- Animated Orbit Lines (Centered for visual depth) -->
-  <g transform="translate(640, 210)">
-    <circle cx="0" cy="0" r="450" fill="none" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.1" class="orbit-cw dash-draw" />
-    <circle cx="0" cy="0" r="350" fill="none" stroke="#22D3EE" stroke-width="1" stroke-opacity="0.15" class="orbit-ccw dash-draw" stroke-dasharray="50 150" />
-    <circle cx="0" cy="0" r="550" fill="none" stroke="#C084FC" stroke-width="0.5" stroke-opacity="0.08" class="orbit-cw" />
-  </g>
+  <use href="#bg" />
+  <rect width="1200" height="400" fill="url(#grid)" rx="15" />
+  
+  <!-- Ambient Glows -->
+  <circle cx="200" cy="100" r="400" fill="url(#glow1)" class="anim-pulse" />
+  <circle cx="1000" cy="300" r="350" fill="url(#glow2)" class="anim-pulse" style="animation-delay: -2s;" />
 
   <!-- Center Content -->
-  <g text-anchor="middle" transform="translate(640, 150)">
-    <text y="0" class="title">Abdullah Ragab</text>
-    <text y="50" class="tagline">Full-Stack Developer <tspan fill="#22D3EE">×</tspan> AI Automation Builder</text>
-    <text y="90" class="subline">Arabic-first platforms <tspan fill="#7C3AED">•</tspan> Business systems <tspan fill="#7C3AED">•</tspan> Telegram bots <tspan fill="#7C3AED">•</tspan> Local-first tools</text>
+  <g text-anchor="middle">
+    <text x="600" y="160" class="name">Abdullah Ragab</text>
+    <text x="600" y="210" class="role">Software Engineer &amp; Full-Stack Builder</text>
+    <text x="600" y="250" class="desc">Arabic-first platforms • Business systems • Local-first tools</text>
   </g>
 
-  <!-- Tech Chips (Centered below subtitle) -->
-  <g transform="translate(640, 290)">
+  <!-- Abstract Graphic Right (Code/Terminal Window) -->
+  <g class="anim-float" transform="translate(900, 100)">
+    <rect width="200" height="130" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+    <!-- Window buttons -->
+    <circle cx="15" cy="15" r="4" fill="#ef4444" />
+    <circle cx="27" cy="15" r="4" fill="#eab308" />
+    <circle cx="39" cy="15" r="4" fill="#22c55e" />
+    
+    <!-- Code lines -->
+    <rect x="15" y="40" width="80" height="6" rx="3" fill="#A855F7" opacity="0.8" />
+    <rect x="15" y="55" width="120" height="6" rx="3" fill="#38bdf8" opacity="0.6" />
+    <rect x="15" y="70" width="60" height="6" rx="3" fill="#c084fc" opacity="0.7" />
+    <rect x="15" y="85" width="140" height="6" rx="3" fill="#94a3b8" opacity="0.4" />
+  </g>
+
+  <!-- Abstract Graphic Left (AI/Network Node) -->
+  <g class="anim-float-delayed" transform="translate(100, 180)">
+    <rect width="160" height="80" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+    <path d="M 20 40 L 40 40 L 50 25 L 65 55 L 75 40 L 140 40" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linejoin="round" />
+    <circle cx="40" cy="40" r="3" fill="#22D3EE" />
+    <circle cx="50" cy="25" r="3" fill="#22D3EE" />
+    <circle cx="65" cy="55" r="3" fill="#A855F7" />
+    <circle cx="75" cy="40" r="3" fill="#22D3EE" />
+  </g>
+
+  <!-- Tech Chips Centered Bottom -->
+  <g transform="translate(600, 310)">
     <!-- Next.js -->
-    <g transform="translate(-320, 0)">
-      <rect x="-40" y="-12" width="80" height="24" rx="12" fill="url(#chipGrad)" stroke="#7C3AED" stroke-width="0.5" stroke-opacity="0.5" />
+    <g transform="translate(-240, 0)">
+      <rect x="-35" y="-12" width="70" height="24" class="chip-bg" />
       <text x="0" y="4" text-anchor="middle" class="chip-text">Next.js</text>
     </g>
     <!-- TypeScript -->
-    <g transform="translate(-210, 0)">
-      <rect x="-45" y="-12" width="90" height="24" rx="12" fill="url(#chipGrad)" stroke="#7C3AED" stroke-width="0.5" stroke-opacity="0.5" />
+    <g transform="translate(-140, 0)">
+      <rect x="-40" y="-12" width="80" height="24" class="chip-bg" />
       <text x="0" y="4" text-anchor="middle" class="chip-text">TypeScript</text>
     </g>
     <!-- Python -->
-    <g transform="translate(-100, 0)">
-      <rect x="-35" y="-12" width="70" height="24" rx="12" fill="url(#chipGrad)" stroke="#7C3AED" stroke-width="0.5" stroke-opacity="0.5" />
+    <g transform="translate(-40, 0)">
+      <rect x="-30" y="-12" width="60" height="24" class="chip-bg" />
       <text x="0" y="4" text-anchor="middle" class="chip-text">Python</text>
     </g>
-    <!-- PostgreSQL -->
-    <g transform="translate(0, 0)">
-      <rect x="-45" y="-12" width="90" height="24" rx="12" fill="url(#chipGrad)" stroke="#7C3AED" stroke-width="0.5" stroke-opacity="0.5" />
-      <text x="0" y="4" text-anchor="middle" class="chip-text">PostgreSQL</text>
+    <!-- Postgres -->
+    <g transform="translate(50, 0)">
+      <rect x="-40" y="-12" width="80" height="24" class="chip-bg" />
+      <text x="0" y="4" text-anchor="middle" class="chip-text">Postgres</text>
     </g>
     <!-- VPS -->
-    <g transform="translate(90, 0)">
-      <rect x="-25" y="-12" width="50" height="24" rx="12" fill="url(#chipGrad)" stroke="#7C3AED" stroke-width="0.5" stroke-opacity="0.5" />
+    <g transform="translate(140, 0)">
+      <rect x="-25" y="-12" width="50" height="24" class="chip-bg" />
       <text x="0" y="4" text-anchor="middle" class="chip-text">VPS</text>
     </g>
-    <!-- AI Workflows -->
-    <g transform="translate(200, 0)">
-      <rect x="-50" y="-12" width="100" height="24" rx="12" fill="url(#chipGrad)" stroke="#22D3EE" stroke-width="0.8" stroke-opacity="0.6" />
-      <text x="0" y="4" text-anchor="middle" class="chip-text">AI Workflows</text>
+    <!-- AI -->
+    <g transform="translate(210, 0)">
+      <rect x="-25" y="-12" width="50" height="24" class="chip-bg" />
+      <text x="0" y="4" text-anchor="middle" class="chip-text">AI</text>
     </g>
   </g>
-
-  <!-- Mock Dashboard Card (Right Side) -->
-  <g class="float-slow" transform="translate(1000, 70)">
-    <rect width="220" height="160" rx="12" fill="#0D1117" stroke="#A855F7" stroke-width="1.5" stroke-opacity="0.6" style="backdrop-filter: blur(10px);" />
-    <path d="M0 12 C0 5.37 5.37 0 12 0 L208 0 C214.6 0 220 5.37 220 12 L220 30 L0 30 Z" fill="#1E1E2E" opacity="0.8" />
-    <!-- Window Controls -->
-    <circle cx="15" cy="15" r="4" fill="#EF4444" />
-    <circle cx="28" cy="15" r="4" fill="#F59E0B" />
-    <circle cx="41" cy="15" r="4" fill="#10B981" />
-    <text x="110" y="20" text-anchor="middle" class="chip-text" fill="#94A3B8">system_monitor.ts</text>
-    
-    <!-- Code / Dashboard Bars -->
-    <rect x="15" y="50" width="80" height="6" rx="3" fill="#A855F7" class="bar-pulse-1" />
-    <rect x="15" y="70" width="140" height="6" rx="3" fill="#22D3EE" opacity="0.6" />
-    <rect x="15" y="90" width="60" height="6" rx="3" fill="#C084FC" class="bar-pulse-2" />
-    <rect x="15" y="110" width="110" height="6" rx="3" fill="#7C3AED" opacity="0.8" />
-    <rect x="15" y="130" width="90" height="6" rx="3" fill="#22D3EE" class="bar-pulse-3" />
-    
-    <!-- Decorative Box inside card -->
-    <rect x="150" y="60" width="50" height="50" rx="6" fill="none" stroke="#22D3EE" stroke-width="1" stroke-opacity="0.5" stroke-dasharray="2 2" />
-    <circle cx="175" cy="85" r="15" fill="none" stroke="#A855F7" stroke-width="2" class="pulse-fast" />
-  </g>
-
-  <!-- AI Automation Card (Left Side) -->
-  <g class="float-delay-1" transform="translate(60, 220)">
-    <rect width="180" height="90" rx="10" fill="#100020" stroke="#22D3EE" stroke-width="1.2" stroke-opacity="0.8" style="backdrop-filter: blur(8px);" />
-    <rect x="15" y="15" width="24" height="24" rx="6" fill="#A855F7" opacity="0.2" />
-    <!-- AI Icon abstraction -->
-    <path d="M21 21 L27 27 M27 21 L21 27" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" />
-    <text x="50" y="32" class="card-title">AI Automation</text>
-    <text x="15" y="60" class="card-sub">Active Workflows: <tspan fill="#10B981">Optimal</tspan></text>
-    <rect x="15" y="70" width="150" height="4" rx="2" fill="#2D2D44" />
-    <rect x="15" y="70" width="100" height="4" rx="2" fill="#A855F7" class="bar-pulse-2" />
-  </g>
-
-  <!-- Decorative geometric elements -->
-  <g opacity="0.3" class="float-med" transform="translate(1100, 280)">
-    <polygon points="20,0 40,20 20,40 0,20" fill="none" stroke="#7C3AED" stroke-width="2" />
-    <polygon points="20,5 35,20 20,35 5,20" fill="none" stroke="#22D3EE" stroke-width="1" />
-  </g>
-
-  <g opacity="0.4" class="float-fast" transform="translate(100, 80)">
-    <circle cx="20" cy="20" r="16" fill="none" stroke="#C084FC" stroke-width="1" stroke-dasharray="4 4" class="orbit-cw" />
-    <circle cx="20" cy="20" r="8" fill="#7C3AED" opacity="0.5" />
-  </g>
-
 </svg>
