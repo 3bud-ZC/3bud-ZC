@@ -1,12 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="12" viewBox="0 0 1200 12">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="24" viewBox="0 0 1400 24">
   <defs>
-    <linearGradient id="dg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0"/>
-      <stop offset="30%" stop-color="#7C3AED" stop-opacity=".6"/>
-      <stop offset="50%" stop-color="#A855F7" stop-opacity="1"/>
-      <stop offset="70%" stop-color="#7C3AED" stop-opacity=".6"/>
-      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    <linearGradient id="dividerLine" x1="0" y1="0" x2="1400" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0"/>
+      <stop offset="18%" stop-color="#7c3aed" stop-opacity=".85"/>
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="1"/>
+      <stop offset="82%" stop-color="#22d3ee" stop-opacity=".85"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
     </linearGradient>
+    <filter id="softGlow" x="-20%" y="-400%" width="140%" height="900%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
   </defs>
-  <rect x="0" y="5" width="1200" height="2" rx="1" fill="url(#dg)"/>
+  <rect x="110" y="11" width="1180" height="2" rx="1" fill="url(#dividerLine)"/>
+  <rect x="110" y="11" width="1180" height="2" rx="1" fill="url(#dividerLine)" opacity=".45" filter="url(#softGlow)"/>
 </svg>
