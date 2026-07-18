@@ -15,11 +15,11 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Available%20for%20new%20projects-111827?style=for-the-badge&logo=rocket&logoColor=67E8F9&labelColor=111827&color=6D28D9" alt="Available for new projects" />
+  <strong>Full-stack developer and AI automation tool maker focused on practical digital products.</strong>
 </p>
 
 <p align="center">
-  <strong>Building websites, systems, bots, and AI tools from idea to deployment.</strong>
+  Websites, internal systems, Telegram bots, AI workflows, and Arabic-first business tools.
 </p>
 
 <p align="center">
@@ -28,35 +28,21 @@
 
 ## About
 
-I am **Abdullah Ragab**, a full-stack developer focused on practical digital products.
+I am **Abdullah Ragab**, a full-stack developer focused on building practical digital products for real business needs.
 
-I build business websites, Arabic-first dashboards, ERP and CRM systems, Telegram bots, internal tools, and AI-assisted workflows with end-to-end ownership from product structure to deployment.
+My public portfolio positions my work around websites, systems, Telegram bots, and AI tools. My GitHub profile also describes the same focus: websites, internal systems, Telegram bots, and automation workflows.
 
-## Proof Points
+## Verified Profile Signals
 
 <table align="center">
   <tr>
-    <td width="33%" align="center">
-      <strong>50+</strong><br />
-      <sub>Projects delivered</sub>
+    <td width="50%" valign="top">
+      <h3>From my portfolio</h3>
+      <p>Available for new projects, with services around professional websites, ERP/CRM systems, Telegram bots and mini apps, AI automation, digital platforms, and VPS operations.</p>
     </td>
-    <td width="33%" align="center">
-      <strong>30+</strong><br />
-      <sub>Client engagements</sub>
-    </td>
-    <td width="33%" align="center">
-      <strong>5+</strong><br />
-      <sub>Years of practical experience</sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <strong>8+</strong><br />
-      <sub>Published apps and platforms</sub>
-    </td>
-    <td align="center" colspan="2">
-      <strong>99%</strong><br />
-      <sub>Focus on stability and quality</sub>
+    <td width="50%" valign="top">
+      <h3>From my GitHub profile</h3>
+      <p>Public profile under <a href="https://github.com/3bud-ZC">@3bud-ZC</a>, with repositories and a bio focused on full-stack development, AI, automation, websites, internal systems, Telegram bots, and workflows.</p>
     </td>
   </tr>
 </table>
@@ -67,31 +53,31 @@ I build business websites, Arabic-first dashboards, ERP and CRM systems, Telegra
   <tr>
     <td width="50%" valign="top">
       <h3>Websites and Platforms</h3>
-      <p>Fast service websites, portfolios, dashboards, quote funnels, and digital platforms built to convert visitors into real leads.</p>
+      <p>Service websites, portfolios, dashboards, quote funnels, and digital platforms designed around a clear next step for the visitor.</p>
     </td>
     <td width="50%" valign="top">
-      <h3>Custom ERP and CRM</h3>
-      <p>Operational systems for sales, inventory, follow-up, reporting, and internal workflows shaped around the business instead of generic software.</p>
+      <h3>Business Systems</h3>
+      <p>ERP and CRM-style tools for sales, inventory, follow-up, reporting, and internal workflows.</p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h3>Telegram Bots and Mini Apps</h3>
-      <p>Bots for tasks, alerts, orders, automation, and client-facing workflows with stronger Arabic UX when the audience needs it.</p>
+      <p>Bots for tasks, alerts, orders, client flows, admin actions, and lightweight automation.</p>
     </td>
     <td width="50%" valign="top">
-      <h3>AI Tools and Automation</h3>
-      <p>Internal AI tools, prompt systems, local-first workflows, and automation layers that reduce manual work and speed up execution.</p>
+      <h3>AI and Automation Tools</h3>
+      <p>Prompt systems, local-first utilities, repository intelligence, and workflow automation that reduces repetitive work.</p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>Arabic-first Product Work</h3>
-      <p>RTL-aware interfaces and product decisions built for local business realities, not translated after the fact.</p>
+      <h3>Arabic-first Interfaces</h3>
+      <p>RTL-aware product work for Arabic users, especially dashboards, legal workflows, and business operations.</p>
     </td>
     <td width="50%" valign="top">
       <h3>Deployment and Operations</h3>
-      <p>Docker, VPS, Nginx, PM2, and production delivery for products that need to run reliably after launch.</p>
+      <p>VPS deployment, Docker-based tooling, Nginx, PM2, Cloudflare, and production handoff basics.</p>
     </td>
   </tr>
 </table>
@@ -102,40 +88,32 @@ I build business websites, Arabic-first dashboards, ERP and CRM systems, Telegra
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/3bud-ZC/RepoRadar-Ai">RepoRadar AI</a></h3>
-      <p>Desktop-friendly and CLI-based repository scanner that turns local codebases into architecture reports, security notes, fix plans, and AI-agent-ready context without paid AI.</p>
-      <p><sub>Developer tooling | TypeScript | Local-first analysis</sub></p>
+      <p>Local repository scanner that generates architecture reports, security notes, fix plans, GitHub-ready issues, and AI-agent prompts without paid AI.</p>
+      <p><sub>TypeScript | CLI tool | Local-first analysis</sub></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/3bud-ZC/OmniAgent">OmniAgent</a></h3>
-      <p>Windows-first, privacy-focused desktop AI assistant built with Electron, React, TypeScript, and FastAPI for local model workflows and safe user-controlled execution.</p>
-      <p><sub>Desktop AI | Electron | Local LLM workflows</sub></p>
+      <p>Windows-first desktop AI assistant built with Electron, React, TypeScript, and a Python FastAPI backend for local model workflows.</p>
+      <p><sub>Electron | React | FastAPI | Local AI</sub></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/3bud-ZC/Mohamy">Mohamy</a></h3>
-      <p>Offline-first Android legal workflow app for managing clients, cases, sessions, files, search, templates, and GitHub-based update delivery.</p>
-      <p><sub>Legal tech | Kotlin | Local-first mobile</sub></p>
+      <p>Offline-first Android legal workflow app for managing clients, cases, sessions, files, search, templates, and updates.</p>
+      <p><sub>Kotlin | Android | Legal tech | Local-first</sub></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/3bud-ZC/Abud-Shorts-Engine">Abud Shorts Engine</a></h3>
-      <p>Local-first Docker tool for generating branded short videos using templates, Kokoro TTS, Whisper captions, Pexels backgrounds, Remotion rendering, and a React UI.</p>
-      <p><sub>Video automation | React | Creator systems</sub></p>
+      <p>Local-first Docker tool for branded short-video generation using templates, TTS, captions, background footage, Remotion, and React.</p>
+      <p><sub>TypeScript | React | Docker | Video automation</sub></p>
     </td>
   </tr>
 </table>
 
 <p align="center">
-  Other public builds: <a href="https://github.com/3bud-ZC/promptforge">PromptForge</a> | <a href="https://github.com/3bud-ZC/Personal-Task-Manager-Telegram-Bot">Task Manager Bot</a>
+  Other public builds: <a href="https://github.com/3bud-ZC/promptforge">PromptForge</a> | <a href="https://github.com/3bud-ZC/Personal-Task-Manager-Telegram-Bot">Task Manager Bot</a> | <a href="https://github.com/3bud-ZC/PoseMeme">PoseMeme</a>
 </p>
-
-## Why Work With Me
-
-- Practical execution, not theory-only output
-- Clear scope, structured delivery, and realistic next steps
-- Comfortable working across frontend, backend, and deployment in one flow
-- Strong fit for Arabic and RTL business products
-- Products built for actual operations, not just portfolio screenshots
 
 ## Core Stack
 
@@ -153,7 +131,7 @@ I build business websites, Arabic-first dashboards, ERP and CRM systems, Telegra
 ## Contact
 
 <p align="center">
-  If you want to build a serious product or improve an existing system, reach out here:
+  For project discussions, collaboration, or freelance work:
 </p>
 
 <p align="center">
@@ -169,5 +147,5 @@ I build business websites, Arabic-first dashboards, ERP and CRM systems, Telegra
 </p>
 
 <p align="center">
-  <b>Practical software, clear delivery, and products built to run.</b>
+  <b>Practical software for websites, systems, bots, and automation.</b>
 </p>

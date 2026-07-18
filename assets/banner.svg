@@ -1,148 +1,89 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="460" viewBox="0 0 1400 460">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="420" viewBox="0 0 1400 420">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="460" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#050508"/>
-      <stop offset="45%" stop-color="#0a0812"/>
-      <stop offset="100%" stop-color="#101426"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06070b"/>
+      <stop offset="52%" stop-color="#0d1020"/>
+      <stop offset="100%" stop-color="#071b24"/>
     </linearGradient>
-    <radialGradient id="glowLeft" cx="24%" cy="28%" r="42%">
-      <stop offset="0%" stop-color="#9333ea" stop-opacity=".22"/>
-      <stop offset="100%" stop-color="#9333ea" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glowRight" cx="82%" cy="72%" r="42%">
-      <stop offset="0%" stop-color="#22d3ee" stop-opacity=".18"/>
-      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glowCenter" cx="52%" cy="48%" r="52%">
-      <stop offset="0%" stop-color="#7c3aed" stop-opacity=".08"/>
-      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="line" x1="0" y1="0" x2="1400" y2="0" gradientUnits="userSpaceOnUse">
+    <linearGradient id="accent" x1="120" y1="0" x2="1280" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#7c3aed"/>
-      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="55%" stop-color="#a855f7"/>
       <stop offset="100%" stop-color="#22d3ee"/>
     </linearGradient>
-    <linearGradient id="iconGrad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#9333ea"/>
-      <stop offset="100%" stop-color="#6d28d9"/>
-    </linearGradient>
-    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
-      <path d="M36 0L0 0 0 36" fill="none" stroke="#ffffff" stroke-opacity=".03" stroke-width=".7"/>
+    <radialGradient id="softLeft" cx="24%" cy="30%" r="48%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity=".20"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="softRight" cx="78%" cy="72%" r="45%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity=".16"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0L0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity=".035" stroke-width="1"/>
     </pattern>
     <style>
       text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif}
-      .title{font-size:58px;font-weight:800;fill:#f8fafc;letter-spacing:-1px}
-      .tag{font-size:24px;font-weight:700;fill:#d8b4fe}
-      .sub{font-size:17px;font-weight:500;fill:#b8c1d9}
-      .pillText{font-size:12px;font-weight:700;fill:#f8fafc}
-      .pillSub{font-size:10px;font-weight:500;fill:#9fb0d0}
-      .cardTitle{font-size:14px;font-weight:700;fill:#f8fafc}
-      .cardBody{font-size:12px;font-weight:500;fill:#aab6d1}
-      .mini{font-size:11px;font-weight:600;fill:#c4b5fd}
-      .ok{font-size:11px;font-weight:700;fill:#67e8f9}
-      .muted{font-size:10px;font-weight:600;fill:#8ea0c2}
-      @keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-      @keyframes floatB{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
-      @keyframes pulse{0%,100%{opacity:.55;transform:scale(.98)}50%{opacity:1;transform:scale(1.02)}}
-      .f1{animation:floatA 7s ease-in-out infinite}
-      .f2{animation:floatB 6s ease-in-out infinite 1.5s}
-      .glow{animation:pulse 7s ease-in-out infinite}
-      .glow2{animation:pulse 7s ease-in-out infinite 3s}
+      .kicker{font-size:15px;font-weight:700;fill:#67e8f9;letter-spacing:1px}
+      .title{font-size:64px;font-weight:800;fill:#f8fafc;letter-spacing:0}
+      .role{font-size:26px;font-weight:700;fill:#d8b4fe;letter-spacing:0}
+      .body{font-size:18px;font-weight:500;fill:#cbd5e1;letter-spacing:0}
+      .chip{font-size:13px;font-weight:700;fill:#f8fafc;letter-spacing:0}
+      .label{font-size:12px;font-weight:700;fill:#a5b4fc;letter-spacing:.4px}
+      .small{font-size:13px;font-weight:500;fill:#cbd5e1;letter-spacing:0}
     </style>
   </defs>
 
-  <rect width="1400" height="460" rx="18" fill="url(#bg)"/>
-  <rect width="1400" height="460" rx="18" fill="url(#grid)"/>
-  <ellipse cx="320" cy="140" rx="430" ry="250" fill="url(#glowLeft)" class="glow"/>
-  <ellipse cx="1120" cy="310" rx="390" ry="220" fill="url(#glowRight)" class="glow2"/>
-  <ellipse cx="700" cy="230" rx="540" ry="300" fill="url(#glowCenter)"/>
+  <rect width="1400" height="420" rx="18" fill="url(#bg)"/>
+  <rect width="1400" height="420" rx="18" fill="url(#grid)"/>
+  <ellipse cx="320" cy="125" rx="430" ry="240" fill="url(#softLeft)"/>
+  <ellipse cx="1080" cy="300" rx="390" ry="220" fill="url(#softRight)"/>
+  <rect x="0" y="0" width="1400" height="4" rx="2" fill="url(#accent)"/>
 
-  <rect x="0" y="0" width="1400" height="4" rx="2" fill="url(#line)" opacity=".85"/>
-
-  <g transform="translate(62,52)">
-    <rect width="214" height="40" rx="20" fill="#111827" fill-opacity=".88" stroke="#ffffff" stroke-opacity=".08"/>
-    <circle cx="24" cy="20" r="6" fill="#22d3ee"/>
-    <text x="42" y="25" class="pillText">AVAILABLE FOR NEW PROJECTS</text>
-  </g>
-
-  <g transform="translate(1128,54)">
-    <rect width="210" height="40" rx="20" fill="#ffffff" fill-opacity=".03" stroke="#ffffff" stroke-opacity=".1"/>
-    <text x="20" y="25" class="pillText">abud.fun | Egypt-based builder</text>
+  <g text-anchor="middle">
+    <text x="700" y="108" class="kicker">ABUD.FUN  |  GITHUB.COM/3BUD-ZC</text>
+    <text x="700" y="176" class="title">Abdullah Ragab</text>
+    <text x="700" y="222" class="role">Full-Stack Developer and AI Automation Tool Maker</text>
+    <text x="700" y="258" class="body">Websites, internal systems, Telegram bots, AI workflows, and Arabic-first tools</text>
   </g>
 
   <g text-anchor="middle">
-    <text x="700" y="160" class="title">Abdullah Ragab</text>
-    <text x="700" y="204" class="tag">Full-Stack Developer x AI Automation Builder</text>
-    <text x="700" y="238" class="sub">Arabic-first products | ERP / CRM systems | Bots | Local-first tools</text>
-    <text x="700" y="266" class="sub">Websites, systems, AI workflows, and deployment built to run in production</text>
-  </g>
-
-  <g class="f2" transform="translate(88,132)">
-    <rect width="228" height="168" rx="18" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".12"/>
-    <rect x="18" y="18" width="36" height="36" rx="10" fill="url(#iconGrad)"/>
-    <path d="M34 26l-6 10h5l-2 10 10-14h-6l3-6z" fill="#67e8f9"/>
-    <text x="66" y="34" class="cardTitle">Build Scope</text>
-    <text x="66" y="51" class="cardBody">Real product work, not demo-only output</text>
-    <text x="18" y="84" class="mini">Websites and platforms</text>
-    <text x="18" y="104" class="mini">Custom ERP / CRM</text>
-    <text x="18" y="124" class="mini">Telegram bots and mini apps</text>
-    <text x="18" y="144" class="mini">AI tools and automation</text>
-    <text x="18" y="160" class="ok">Arabic-first + production-focused</text>
-  </g>
-
-  <g class="f1" transform="translate(1060,112)">
-    <rect width="260" height="188" rx="18" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".12"/>
-    <rect x="18" y="18" width="36" height="36" rx="10" fill="url(#iconGrad)"/>
-    <circle cx="36" cy="36" r="9" fill="none" stroke="#67e8f9" stroke-width="2"/>
-    <circle cx="36" cy="36" r="3" fill="#67e8f9"/>
-    <text x="66" y="34" class="cardTitle">Delivery Flow</text>
-    <text x="66" y="51" class="cardBody">Structured execution from idea to launch</text>
-    <text x="18" y="88" class="pillText">01</text>
-    <text x="54" y="88" class="mini">Discovery and scope</text>
-    <text x="18" y="112" class="pillText">02</text>
-    <text x="54" y="112" class="mini">Design and system structure</text>
-    <text x="18" y="136" class="pillText">03</text>
-    <text x="54" y="136" class="mini">Build, test, and refine</text>
-    <text x="18" y="160" class="pillText">04</text>
-    <text x="54" y="160" class="mini">Deploy, monitor, and support</text>
-    <text x="18" y="180" class="ok">Docker | VPS | PM2 | Nginx</text>
-  </g>
-
-  <g transform="translate(310,318)">
-    <g transform="translate(0,0)">
-      <rect width="132" height="58" rx="16" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".09"/>
-      <text x="66" y="24" text-anchor="middle" class="pillText">50+</text>
-      <text x="66" y="42" text-anchor="middle" class="pillSub">projects</text>
+    <g transform="translate(325,304)">
+      <rect x="-82" y="-19" width="164" height="38" rx="19" fill="#ffffff" fill-opacity=".055" stroke="#ffffff" stroke-opacity=".12"/>
+      <text y="5" class="chip">Next.js / React</text>
     </g>
-    <g transform="translate(150,0)">
-      <rect width="132" height="58" rx="16" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".09"/>
-      <text x="66" y="24" text-anchor="middle" class="pillText">30+</text>
-      <text x="66" y="42" text-anchor="middle" class="pillSub">clients</text>
+    <g transform="translate(515,304)">
+      <rect x="-86" y="-19" width="172" height="38" rx="19" fill="#ffffff" fill-opacity=".055" stroke="#ffffff" stroke-opacity=".12"/>
+      <text y="5" class="chip">TypeScript</text>
     </g>
-    <g transform="translate(300,0)">
-      <rect width="132" height="58" rx="16" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".09"/>
-      <text x="66" y="24" text-anchor="middle" class="pillText">5+</text>
-      <text x="66" y="42" text-anchor="middle" class="pillSub">years</text>
+    <g transform="translate(700,304)">
+      <rect x="-78" y="-19" width="156" height="38" rx="19" fill="#ffffff" fill-opacity=".055" stroke="#ffffff" stroke-opacity=".12"/>
+      <text y="5" class="chip">Python / Node.js</text>
     </g>
-    <g transform="translate(450,0)">
-      <rect width="132" height="58" rx="16" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".09"/>
-      <text x="66" y="24" text-anchor="middle" class="pillText">8+</text>
-      <text x="66" y="42" text-anchor="middle" class="pillSub">published</text>
+    <g transform="translate(895,304)">
+      <rect x="-86" y="-19" width="172" height="38" rx="19" fill="#ffffff" fill-opacity=".055" stroke="#ffffff" stroke-opacity=".12"/>
+      <text y="5" class="chip">PostgreSQL</text>
     </g>
-    <g transform="translate(600,0)">
-      <rect width="132" height="58" rx="16" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".09"/>
-      <text x="66" y="24" text-anchor="middle" class="pillText">99%</text>
-      <text x="66" y="42" text-anchor="middle" class="pillSub">quality focus</text>
+    <g transform="translate(1082,304)">
+      <rect x="-78" y="-19" width="156" height="38" rx="19" fill="#ffffff" fill-opacity=".055" stroke="#ffffff" stroke-opacity=".12"/>
+      <text y="5" class="chip">Docker / VPS</text>
     </g>
   </g>
 
-  <circle cx="170" cy="92" r="2" fill="#c084fc"/>
-  <circle cx="260" cy="354" r="2" fill="#67e8f9"/>
-  <circle cx="630" cy="72" r="2" fill="#e9d5ff"/>
-  <circle cx="1188" cy="86" r="2" fill="#c084fc"/>
-  <circle cx="1304" cy="344" r="2" fill="#67e8f9"/>
-  <circle cx="990" cy="52" r="2" fill="#e9d5ff"/>
+  <g transform="translate(170,354)">
+    <rect width="310" height="38" rx="10" fill="#05070d" fill-opacity=".55" stroke="#ffffff" stroke-opacity=".10"/>
+    <text x="18" y="24" class="label">FOCUS</text>
+    <text x="84" y="24" class="small">Websites, systems, bots, automation</text>
+  </g>
 
-  <rect x="72" y="426" width="1256" height="1.5" rx=".75" fill="url(#line)" opacity=".28"/>
-  <text x="700" y="446" text-anchor="middle" class="muted">Practical software | clear delivery | products built to run</text>
+  <g transform="translate(545,354)">
+    <rect width="310" height="38" rx="10" fill="#05070d" fill-opacity=".55" stroke="#ffffff" stroke-opacity=".10"/>
+    <text x="18" y="24" class="label">PUBLIC</text>
+    <text x="86" y="24" class="small">Public GitHub repositories</text>
+  </g>
+
+  <g transform="translate(920,354)">
+    <rect width="310" height="38" rx="10" fill="#05070d" fill-opacity=".55" stroke="#ffffff" stroke-opacity=".10"/>
+    <text x="18" y="24" class="label">CONTACT</text>
+    <text x="100" y="24" class="small">abud@abud.fun</text>
+  </g>
 </svg>

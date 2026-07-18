@@ -2,24 +2,23 @@
 
 - **Current completion percentage**: 100%
 - **Files changed**:
-  - `README.md` (rewritten)
+  - `README.md` (corrected)
   - `assets/banner.svg` (rebuilt)
-  - `assets/divider.svg` (updated)
   - `PROFILE_README_STATUS.md` (updated)
 - **What was completed**:
-  - Rebuilt the profile README around stronger public proof points and clearer service positioning.
-  - Replaced the generic hero copy with a more serious product-focused message and active availability badge.
-  - Tightened the project section to the strongest public repositories with descriptions grounded in current public READMEs and repo metadata.
-  - Replaced the old banner with a richer SVG that carries identity, delivery flow, and proof stats directly in the hero.
-  - Simplified GitHub analytics to the two highest-signal cards instead of the noisier streak layout.
+  - Removed unsupported proof metrics and avoided numeric claims that are not publicly verifiable.
+  - Rebuilt the banner as a static, centered SVG with no overlapping side cards or animation transforms.
+  - Grounded the README in current public sources: `abud.fun`, public GitHub profile metadata, and public repository READMEs.
+  - Kept LinkedIn as a contact badge only because the public LinkedIn page was not available to verify through the automated browser.
+  - Referenced the public GitHub profile without hard-coding a repository count.
 - **What still needs review**:
-  - Optional: preview the rendered README on GitHub mobile and desktop to judge table wrapping and badge sizing.
+  - Preview live on GitHub after push to confirm GitHub's SVG renderer matches the local file.
 - **Any assumptions made**:
-  - Used the current public proof metrics shown on `abud.fun` as the authoritative public summary.
-  - Kept the public contact endpoints already present in the previous version.
+  - Used `abud.fun` and GitHub public metadata as authoritative for this correction pass.
+  - Avoided client/project/year counts unless they are explicitly verifiable from a public source.
 - **Final checklist**:
-  - [x] Review current README and assets
-  - [x] Verify live public positioning and proof points
-  - [x] Rewrite README with stronger structure
-  - [x] Rebuild hero banner
-  - [x] Sync profile assets
+  - [x] Inspect current README and broken banner screenshot
+  - [x] Verify public portfolio copy
+  - [x] Verify public GitHub profile metadata
+  - [x] Remove exaggerated claims
+  - [x] Rebuild banner without overlap risk
